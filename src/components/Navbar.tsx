@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
 
       <div className="">
-      <NavButton text="Connect X" href="/"/>
+      <NavButton text="Connect X" href="Profile"/>
       </div>
     </div>
   );
