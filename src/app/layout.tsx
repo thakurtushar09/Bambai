@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,6 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
+
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}>
         <div className="lg:hidden fixed inset-0 bg-black/5 backdrop-blur-sm z-50 flex items-center justify-center">
           <div className="bg-yellow-400/90 text-black px-6 py-3 rounded-full font-bold text-lg">
@@ -35,6 +38,7 @@ export default function RootLayout({
           {children}
         </div>
       </body>
+     
     </html>
   );
 }
