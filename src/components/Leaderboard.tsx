@@ -13,7 +13,8 @@ const Leaderboard = ({ rank, name, points, image, alternateColor = false }: Lead
   const bgColor = alternateColor ? 'bg-[#E470E9]' : 'bg-[#8B4DFF]';
   
   return (
-    <div className={`${bgColor} rounded-2xl p-4 border-2 border-black flex items-center justify-between`}>
+    <div className={`${bgColor} rounded-2xl p-4 border-2 border-black flex items-center justify-between cursor-pointer cubic-bezier(0.68, -0.6, 0.32, 1.6) 
+      hover:scale-[1.03] hover:shadow-lg hover:z-10`}>
       <div className="w-[30%] flex items-center justify-between pr-5">
         <h1 className="text-xl">{rank}</h1>
         <div className="flex gap-2 items-center">

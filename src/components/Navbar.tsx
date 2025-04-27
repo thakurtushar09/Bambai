@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import NavButton from "./Button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <div className="w-[90%] flex items-center justify-between">
-      <div className="">
+      <Link href={'/'} className="">
         <Image src={"/logo.png"} alt="logo" height={200} width={200} />
-      </div>
+      </Link>
 
       <div className="flex items-center gap-7">
 
